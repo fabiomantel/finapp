@@ -26,9 +26,27 @@ To run Finapp locally, follow these steps:
 4. Start the frontend development server: `cd ../client && npm start`
 5. Open `http://localhost:3000` in your browser to use Finapp.
 
-## Deployment
+## How To Run
+Create the file `mern/server/config.env` with your Atlas URI and the server port:
+```
+ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/
+PORT=5050
+```
 
-Finapp can be deployed to platforms like Heroku, Netlify, or Vercel. Remember to set up environment variables for sensitive information such as database credentials and JWT secret key.
+Start server:
+```
+cd mern/server
+npm install
+npm start
+```
+
+Start Web server
+```
+cd mern/client
+npm install
+npm run dev
+```
+
 
 ## Contributing
 
